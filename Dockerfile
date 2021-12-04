@@ -16,7 +16,7 @@ RUN ["/bin/apt", "install", "-y", "tmux"]
 RUN ["/bin/apt", "install", "-y", "iputils-ping"]
 RUN ["/bin/apt", "install", "-y", "iproute2"]
 RUN ["/bin/mkdir", "/root/reverseshells"]
-COPY php-reverse-shell.php /root/reverseshells
+COPY ./scripts/php-reverse-shell.php /root/reverseshells
 RUN ["/bin/mkdir", "/root/gostuff"]
 WORKDIR "/root/gostuff"
 RUN ["/bin/go", "mod", "init", "github.com/OJ/gobuster"]
