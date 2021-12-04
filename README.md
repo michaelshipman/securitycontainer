@@ -11,4 +11,8 @@ docker pull eccentriccotton/securitycontainer:latest
 
 Then run the container
 ```
-docker run -it securitycontainer
+docker run -it eccentriccotton/securitycontainer:latest
+```
+Optionally use the -p [host port]:[container port] to expose a port for external uses like accepting reverse shells.
+
+Again, probably not the best (or a particularly good) approach but it works.
